@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to right, #dbeafe, #e0f2fe);
+        }
+
+        /* NAVBAR */
+        header {
+            background-color: rgba(0,0,0,0.3);
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+        }
+
+        nav a {
+            margin: 15px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: black;
+        }
+
+        /* CENTER HOME */
+        .hero {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero-box {
+            background: rgba(255,255,255,0.6);
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+        }
+
+        /* SECTIONS */
+        section {
+            padding: 60px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .card {
+            background: white;
+            margin: 15px auto;
+            padding: 20px;
+            border-radius: 15px;
+            width: 60%;
+            box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+        }
+
+        input, textarea {
+            width: 80%;
+            padding: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #4a47a3;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#skills">Skills</a>
+        <a href="#interests">Interests</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- HOME -->
+<section id="home" class="hero">
+    <div class="hero-box">
+        <h1>Neha Shrestha</h1>
+  <!-- Internal CSS -->
+    <style>
+        img {
+            width: 150px;
+            border: 50%;
+        }
+    </style>
+        <img src="me.jpg" alt="My Photo">
+        <p>I am a person who doesn't think before I speak.<br> I like to see the positive side of things tho my thoughts are mostly negative.
+        <br>I am a huge fan of horror and believe in the paranormal.</p>
+
+        <!-- Inline CSS -->
+        <p style="font-style: italic; color: darkblue;">
+            "Always believe in yourself."
+        </p>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+    <h2>My Skills</h2>
+
+    <div class="card">
+        <h3>🏀Basketball</h3>
+        <p>I have been playing basketball for the past 4 year.s</p>
+    </div>
+
+    <div class="card">
+        <h3>🏊‍♀️Swimming</h3>
+        <p>I can do freestyle, breaststroke and backstroke.</p>
+    </div>
+
+    <div class="card">
+        <h3>🎨Pottery</h3>
+        <p>I took pottery classes in school and have done a few myself.</p>
+    </div>
+</section>
+
+<!-- INTERESTS -->
+<section id="interests">
+    <h2>My Interests</h2>
+
+    <div class="card">
+        <h3>📚 Reading</h3>
+        <p>I love reading thriller and mysterious books.</p>
+    </div>
+
+    <div class="card">
+        <h3>🎥 Watching Videos</h3>
+        <p>I enjoy adventure and horror content.</p>
+    </div>
+
+    <div class="card">
+        <h3>🎵 Music</h3>
+        <p>Music helps me relax and stay motivated.</p>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2>Contact Me</h2>
+
+    <div class="card">
+        <form>
+            <input type="text" placeholder="Your Name"><br><br>
+            <input type="email" placeholder="Your Email"><br><br>
+            <textarea rows="4" placeholder="Your Message"></textarea><br><br>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</section>
+
+</body>
+</html>
