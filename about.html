@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Portfolio</title>
+    <title>Neha Portfolio</title>
 
     <style>
         body {
             margin: 0;
             font-family: 'Segoe UI', sans-serif;
             background: linear-gradient(to right, #dbeafe, #e0f2fe);
+            scroll-behavior: smooth;
         }
 
-        /* NAVBAR */
         header {
             background-color: rgba(0,0,0,0.3);
             padding: 15px;
@@ -24,13 +24,14 @@
             text-decoration: none;
             color: white;
             font-weight: bold;
+            transition: 0.3s;
         }
 
         nav a:hover {
             color: black;
         }
 
-        /* CENTER HOME */
+        /* HOME */
         .hero {
             height: 100vh;
             display: flex;
@@ -43,6 +44,7 @@
             padding: 40px;
             border-radius: 20px;
             text-align: center;
+            backdrop-filter: blur(10px);
         }
 
         /* SECTIONS */
@@ -61,11 +63,18 @@
             border-radius: 15px;
             width: 60%;
             box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.03);
         }
 
         input, textarea {
             width: 80%;
             padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
         }
 
         button {
@@ -74,6 +83,11 @@
             color: white;
             border: none;
             border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #3a3690;
         }
     </style>
 </head>
@@ -152,6 +166,7 @@
     </div>
 </section>
 
+
 <!-- CONTACT -->
 <section id="contact">
     <h2>Contact Me</h2>
@@ -163,6 +178,8 @@
             <textarea rows="4" placeholder="Your Message"></textarea><br><br>
             <button type="submit">Send</button>
         </form>
+
+        <p>Email: neha@email.com</p>
     </div>
 </section>
 
